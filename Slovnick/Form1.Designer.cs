@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -43,6 +44,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.LemonChiffon;
             this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Controls.Add(this.btnLoad);
@@ -59,13 +61,14 @@
             // 
             // btnSearch
             // 
+            this.btnSearch.BackColor = System.Drawing.Color.Bisque;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSearch.Location = new System.Drawing.Point(309, 311);
+            this.btnSearch.Location = new System.Drawing.Point(300, 305);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(82, 36);
             this.btnSearch.TabIndex = 8;
             this.btnSearch.Text = "Пошук";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtSearch
@@ -77,34 +80,38 @@
             // 
             // btnLoad
             // 
+            this.btnLoad.BackColor = System.Drawing.Color.Bisque;
             this.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLoad.Location = new System.Drawing.Point(368, 211);
+            this.btnLoad.Location = new System.Drawing.Point(357, 205);
             this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(119, 23);
+            this.btnLoad.Size = new System.Drawing.Size(119, 40);
             this.btnLoad.TabIndex = 6;
             this.btnLoad.Text = "Завантажити";
-            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.UseVisualStyleBackColor = false;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // btnSave
             // 
+            this.btnSave.BackColor = System.Drawing.Color.Bisque;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSave.Location = new System.Drawing.Point(368, 182);
+            this.btnSave.Location = new System.Drawing.Point(357, 164);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(119, 23);
+            this.btnSave.Size = new System.Drawing.Size(119, 35);
             this.btnSave.TabIndex = 5;
             this.btnSave.Text = "Зберегти";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnDelete
             // 
+            this.btnDelete.BackColor = System.Drawing.Color.Bisque;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDelete.Location = new System.Drawing.Point(368, 151);
+            this.btnDelete.Location = new System.Drawing.Point(357, 120);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(119, 23);
+            this.btnDelete.Size = new System.Drawing.Size(119, 38);
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "Видалити";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // listBox1
@@ -118,13 +125,14 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.Bisque;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAdd.Location = new System.Drawing.Point(368, 41);
+            this.btnAdd.Location = new System.Drawing.Point(357, 36);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(75, 36);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Додати";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtTranslate
@@ -145,10 +153,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Khaki;
             this.ClientSize = new System.Drawing.Size(808, 452);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Slovnick";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

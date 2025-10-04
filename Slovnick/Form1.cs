@@ -108,5 +108,27 @@ namespace Slovnick
             }
             MessageBox.Show("Файл успішно збережено");
         }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            if (File.Exists(filePath))
+            {
+                slovnick.Clear();
+
+                foreach (var line in File.ReadAllLines(filePath))
+                {
+                    var parts = line.Split(':');
+                    // [0]
+                    // parts[2] = {"pair.key", "pair.value"}
+                    if (parts.Length == 2)
+                    {
+                        slovnick[parts[0]] = parts[1];
+                    } 
+                }
+
+                UpdateList();
+
+            }
+        }
     }
 }
